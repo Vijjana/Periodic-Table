@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>periodic table</title>
+        <style>
+            #main{
+                display:flex;
+            }
+            #firstchild{
+                display:flex;
+                flex-direction:column;
+            }
+            #firstchild > div{
+                height:60px;
+                width:60px;
+                border:1px solid slateblue;
+                border-radius:10px;
+                margin-bottom:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                font-weight:bold;
+                margin-right:5px;
+            }
+            #kite{
+                text-align:center;
+                position:relative;
+                top:40px;;
+            }
+            .hello{
+                background-color:darkcyan;
+                color:black;
+            }
+            .hi{
+                background-color:darkgray;
+                color:white;
+            }
+            #secondchild{
+                display:flex;
+                flex-direction:column;
+            }
+            #secondchild > div{
+                border:1px solid blue;
+                height:60px;
+                width:60px;
+                border-radius:5px;
+                background-color:rgb(91, 27, 59);
+                color:white;
+                margin-bottom:5px;
+                font-weight:bold;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                position:relative;
+                top:65.5px;
+                margin-right:5px;
+            }
+            #thirdchild{
+                display:flex;
+                flex-direction:column;
+            }
+            #thirdchild > div{
+                width:60px;
+                height:60px;
+                border:1px solid rgb(6, 58, 41);
+                font-weight:bold;
+                margin-bottom:5px;
+                background-color:slateblue;
+                color:black;
+                position:relative;
+                top:196px;
+                border-radius:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                margin-right:5px;
+            }
+            #thirdchild > .jerry{
+                font-size:10px;
+                background-color:aquamarine;
+            }
+            #thirdchild > .tom{
+                font-size:10px;
+                background-color:rgb(116, 88, 88);
+            }
+            #fourthchild{
+                display:flex;
+                flex-direction:column;
+            }
+            #fourthchild > div{
+                height:60px;
+                width:60px;
+                border:1px rgb(19, 81, 81) solid;
+                background-color:rgb(15, 92, 76);
+                color:white;
+                margin-bottom:5px;
+                position:relative;
+                top:195px;
+                font-weight:bold;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                margin-right:5px;
+            }
+             * > .sweety{
+                background-color:rgb(158, 153, 156);
+            }
+            #fifthchild{
+                display:flex;
+                flex-direction:column;
+            }
+            #fifthchild > div{
+                height:60px;
+                width:60px;
+                border:1px rgb(19, 81, 81) solid;
+                background-color:rgb(118, 211, 118);
+                color:rgb(23, 19, 19);
+                margin-bottom:5px;
+                position:relative;
+                top:195px;
+                font-weight:bold;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                margin-right:5px;
+            }
+            .class{
+                background-color:rgb(118, 211, 118);
+            }
+            .sudhishna{
+                background-color:rgb(43, 229, 229);
+            }
+            #sixth{
+                display:flex;
+                flex-direction:column;
+            }
+            #sixth > div{
+                height:60px;
+                width:60px;
+                border:1px rgb(19, 81, 81) solid;
+                font-weight:bold;
+                position:relative;
+                top:60px;
+                margin-bottom:5px;
+                margin-right:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #fourthchild > .sweety{
+                background-color:rgb(158, 153, 156);
+            }
+            #gun{
+                display:flex;
+                flex-direction:column;
+            }
+            #gun > div{
+                height:60px;
+                width:60px;
+                border:1px rgb(19, 81, 81) solid;
+                font-weight:bold;
+                position:relative;
+                top:60px;
+                margin-bottom:5px;
+                margin-right:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .state{
+                background-color:rgb(114, 54, 26);
+            }
+            #eight{
+                display:flex;
+                flex-direction:column;
+            }
+            #eight > div{
+                height:60px;
+                width:60px;
+                border:1px solid rgb(9, 42, 42);
+                margin-bottom:5px;
+                font-weight:bold;
+                border-radius:5px;
+                position:relative;
+                top:60px;
+                margin-right:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #nine{
+                display:flex;
+                flex-direction:column;
+            }
+            #nine > div{
+                height:60px;
+                width:60px;
+                border:1px solid rgb(9, 42, 42);
+                margin-bottom:5px;
+                font-weight:bold;
+                border-radius:5px;
+                position:relative;
+                top:60px;
+                margin-right:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #ten{
+                display:flex;
+                flex-direction:column;
+            }
+            #ten > div{
+                height:60px;
+                width:60px;
+                border:1px solid rgb(9, 42, 42);
+                margin-bottom:5px;
+                font-weight:bold;
+                border-radius:5px;
+                position:relative;
+                top:60px;
+                margin-right:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #eleven{
+                display:flex;
+                flex-direction:column;
+            }
+            #eleven > div{
+                height:60px;
+                width:60px;
+                border:1px solid rgb(9, 42, 42);
+                margin-bottom:5px;
+                font-weight:bold;
+                border-radius:5px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            .honey{
+                background-color:rgb(140, 114, 81);
+            }
+            #akki{
+                display:flex;
+            }
+            #akki > div{
+                height:60px;
+                width:60px;
+                border:1px rgb(40, 65, 51) solid;
+                border-radius:5px;
+                background-color:aquamarine;
+                color:black;
+                font-weight:bold;
+                position:relative;
+                left:150px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            #chinni{
+                display:flex;
+            }
+            #chinni > div{
+                height:60px;
+                width:60px;
+                border:1px rgb(40, 65, 51) solid;
+                border-radius:5px;
+                background-color:rgb(116, 88, 88);
+                color:black;
+                font-weight:bold;
+                position:relative;
+                left:150px;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+            }
+            body{
+                background-color: rgb(114, 174, 174);
+            }
+            
+
+            
+           
+                
+        </style>
+    </head>
+    <body>
+        <h1 id = "kite">THE PERIODIC ELEMENTS OF THE TABLE</h1>
+        <div id = "main">
+        <div id = "firstchild">
+            <div class = "hello">H</div>
+            <div class = "hi">Li</div>
+            <div class = "hi">K</div>
+            <div class = "hi">Na</div>
+            <div class = "hi">Rb</div>
+            <div class = "hi">Cs</div>
+            <div class = "hi">Fr</div>
+        </div>
+        <div id = "secondchild">
+            <div>Be</div>
+            <div>Mg</div>
+            <div>Ca</div>
+            <div>Sr</div>
+            <div>Ba</div>
+            <div>Ra</div>
+        </div>
+        <div id = "thirdchild">
+            <div>Sc</div>
+            <div>Y</div>
+            <div class = "jerry">lanthanoids</div>
+            <div class = "tom">antinodies</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Ti</div>
+            <div>Zr</div>
+            <div>Hf</div>
+            <div>Rf</div>
+        </div>
+        <div id = "fourthchild">
+            <div>V</div>
+            <div>Nb</div>
+            <div>Ta</div>
+            <div>Db</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Cr</div>
+            <div>Mo</div>
+            <div>W</div>
+            <div>Sg</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Mn</div>
+            <div>Tc</div>
+            <div>Re</div>
+            <div>Bh</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Fe</div>
+            <div>Ru</div>
+            <div>Os</div>
+            <div>Hs</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Co</div>
+            <div>Rh</div>
+            <div>Ir</div>
+            <div class = "sweety">Mt</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Ni</div>
+            <div>Pd</div>
+            <div>Pt</div>
+            <div class = "sweety">Ds</div>
+        </div>
+        <div id = "fourthchild">
+            <div>Cu</div>
+            <div>Ag</div>
+            <div>Au</div>
+            <div class = "sweety">Rg</div>
+        </div>
+        <div id = "fifthchild">
+            <div>Zn</div>
+            <div>Cd</div>
+            <div>Hg</div>
+            <div>Cn</div>
+        </div>
+        <div id = "sixth">
+            <div class = "sudhishna">B</div>
+            <div class = "class">Al</div>
+            <div class = "class">Ga</div>
+            <div class = "class">Ln</div>
+            <div class = "class">Tl</div>
+            <div class = "sweety">Nh</div>
+        </div>
+        <div id = "gun">
+            <div class = "state">C</div>
+            <div class = "sudhishna">Si</div>
+            <div class = "sudhishna">Ge</div>
+            <div class = "class">Sn</div>
+            <div class = "class">Pb</div>
+            <div class = "sweety">Fl</div>
+        </div>
+        <div id = "eight">
+            <div class = "state">N</div>
+            <div class = "state">P</div>
+            <div class = "sudhishna">As</div>
+            <div class = "sudhishna">Sb</div>
+            <div class = "class">Bi</div>
+            <div class = "sweety">Mc</div>
+        </div>
+        <div id = "nine">
+            <div class = "state">O</div>
+            <div class = "state">S</div>
+            <div class = "state">Se</div>
+            <div class = "sudhishna">Te</div>
+            <div class = "class">Po</div>
+            <div class = "sweety">Lv</div>
+        </div>
+        <div id = "ten">
+            <div class = "state">F</div>
+            <div class = "state">Cl</div>
+            <div class = "state">Br</div>
+            <div class = "state">I</div>
+            <div class = "sudhishna">At</div>
+            <div class = "sweety">Ts</div>
+        </div>
+        <div id = "eleven">
+            <div class = "honey">He</div>
+            <div class = "honey">Ne</div>
+            <div class = "honey">Ar</div>
+            <div class = "honey">Kr</div>
+            <div class = "honey">Xe</div>
+            <div class = "honey">Rn</div>
+            <div class = "sweety">Og</div>
+        </div>
+        </div>
+        <div id =  "akki">
+           <div>La</div>
+           <div>Ce</div>
+           <div>Pr</div>
+           <div>Nd</div>
+           <div>Pm</div>
+           <div>Sm</div>
+           <div>Eu</div>
+           <div>Gd</div>
+           <div>Tb</div>
+           <div>Dy</div>
+           <div>Ho</div>
+           <div>Er</div>
+           <div>Tm</div>
+           <div>Yb</div>
+           <div>Lu</div>
+        </div>
+        <div id = "chinni">
+            <div>Ac</div>
+            <div>Th</div>
+            <div>Pa</div>
+            <div>U</div>
+            <div>Np</div>
+            <div>Pu</div>
+            <div>Am</div>
+            <div>Cm</div>
+            <div>Bk</div>
+            <div>Cf</div>
+            <div>Es</div>
+            <div>Fm</div>
+            <div>Md</div>
+            <div>Na</div>
+            <div>Lr</div>
+        </div>
+    
+    </body>
+</html>
